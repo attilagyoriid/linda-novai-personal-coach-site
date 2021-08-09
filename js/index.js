@@ -8,9 +8,10 @@ gsap.to(".scale-in", {
     start: "top 80%",
     toggleActions: "play none none none",
   },
-  opacity: 1,
   scale: 1,
-  duration: 4,
+  opacity: 1,
+  duration: 2,
+  ease: "power3.out",
 });
 
 gsap.to("#goal-animation-container", {
@@ -23,3 +24,5 @@ gsap.to("#goal-animation-container", {
   opacity: 1,
   duration: 2,
 });
+
+
