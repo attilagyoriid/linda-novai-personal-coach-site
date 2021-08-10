@@ -621,6 +621,9 @@ nav a:hover {
     position: absolute;
     left: 0px;
   }
+  .welcome .content {
+    margin-top: 120px;
+  }
   .glass-box {
     margin: 0;
     font-size: 1rem;
