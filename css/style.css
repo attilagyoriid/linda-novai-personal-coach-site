@@ -144,7 +144,8 @@ nav a:hover {
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 50px;
+  margin-top: 5%;
+  margin-bottom: 4%;
 }
 .welcome {
   margin: 0;
