@@ -145,7 +145,6 @@ nav a:hover {
   left: 50%;
   transform: translateX(-50%);
   top: 90%;
-
 }
 .welcome {
   margin: 0;
@@ -471,6 +470,7 @@ nav a:hover {
     color: rgba(252, 189, 46, 1);
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .navbar {
     background-color: rgb(89, 86, 131);
@@ -654,8 +654,8 @@ nav a:hover {
   }
 
   .welcome .sub-text {
-   font-size: 0.8rem;
-   font-weight: bold;
+    font-size: 0.8rem;
+    font-weight: bold;
   }
 }
 
