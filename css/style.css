@@ -424,13 +424,12 @@ nav a:hover {
 
 @media only screen and (max-width: 1250px) {
   .hero {
-    background-position: 80% 90%;
+    background-position: 80% 100%;
   }
   .questions {
     font-size: 1rem;
-    font-family: "Raleway", Helvetica, sans-serif;
     font-weight: 400;
-
+    margin-top: 80px;
     margin-bottom: 0;
   }
 
@@ -439,7 +438,6 @@ nav a:hover {
   }
 
   .questions p {
-    font-family: "Raleway", Helvetica, sans-serif;
     font-size: 0.8rem;
     font-weight: 100;
     line-height: 0.4em;
@@ -540,7 +538,7 @@ nav a:hover {
   }
 
   .flex-items {
-    column-gap: 40px;
+    column-gap: 0px;
   }
 
   .btn-flex-container {
@@ -572,7 +570,7 @@ nav a:hover {
     position: relative;
   }
   #goal-animation-container {
-    max-width: 200px;
+    max-width: 300px;
     padding: 0;
   }
   .navbar a {
@@ -645,9 +643,19 @@ nav a:hover {
     padding: 10px;
   }
 
+  .welcome .content {
+    margin-top: 80px;
+    margin: 30px 10px;
+  }
+
   .welcome .section-1 {
     font-size: 0.8rem;
     line-height: 1.2rem;
+  }
+
+  .welcome .sub-text {
+   font-size: 0.8rem;
+   font-weight: bold;
   }
 }
 
@@ -657,6 +665,6 @@ nav a:hover {
   }
 
   #goal-animation-container {
-    max-width: 100px;
+    max-width: 200px;
   }
 }
