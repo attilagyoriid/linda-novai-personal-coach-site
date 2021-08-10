@@ -183,7 +183,6 @@ nav a:hover {
   text-align: center;
 }
 
-
 .welcome .section-1 {
   font-family: Nunito, Helvetica, sans-serif;
   font-weight: 200;
@@ -304,8 +303,6 @@ nav a:hover {
   margin: 20px 0 30px;
 }
 
-
-
 .hero.blog {
   background: url("../images/home/blog.jpg") no-repeat center center/cover;
   height: 30vh;
@@ -336,7 +333,6 @@ nav a:hover {
   padding: 0;
   margin: 0;
 }
-
 
 .cases img:hover {
   opacity: 0.7;
@@ -548,7 +544,7 @@ nav a:hover {
   .btn-flex-container {
     max-width: 500px;
     margin-top: 10px;
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -607,12 +603,23 @@ nav a:hover {
   .welcome .content .flex-items:last-of-type {
     flex-direction: row;
   }
-  
 }
 
 @media only screen and (max-width: 700px) {
   .welcome .header {
-    font-size: 0.6rem;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  }
+
+  .welcome .header h1 {
+    display: inline-block;
+  }
+
+  .welcome .header .line {
+    position: absolute;
+    left: 0px;
   }
   .glass-box {
     margin: 0;
@@ -624,13 +631,9 @@ nav a:hover {
     font-size: 0.8rem;
     line-height: 1.2rem;
   }
-  
 }
 
 @media only screen and (max-width: 500px) {
-  .welcome .header {
-    font-size: 0.6rem;
-  }
   .glass-box {
     margin: 0;
     font-size: 1rem;
