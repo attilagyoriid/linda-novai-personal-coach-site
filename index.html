@@ -38,16 +38,21 @@
             <img src="./icons/Logo.svg" />
           </a>
         </h1>
-        <nav class="p-x-150">
-          <ul>
-            <li><a href="#home">POSTOK</a></li>
-            <li><a href="#welcome">A MÓDSZER</a></li>
-            <li><a href="#cases">RÓLAM</a></li>
-            <li><a href="#blog">ÁRAK</a></li>
-            <li>
+        <nav class="p-x-150 nav-menu-container">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">POSTOK</a></li>
+            <li class="nav-item"><a href="#welcome" class="nav-link">A MÓDSZER</a></li>
+            <li class="nav-item"><a href="#cases" class="nav-link">RÓLAM</a></li>
+            <li class="nav-item"><a href="#blog" class="nav-link">ÁRAK</a></li>
+            <li class="nav-item">
               <a class="menu--item__highlighted" href="#contact">KAPCSOLAT</a>
             </li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         </nav>
       </div>
       <div class="content ml-150">
@@ -93,7 +98,7 @@
           <div id="goal-animation-container">
 
           </div>
-          <div>
+          <div class="welcome-text">
             
             <div>
               <p class="section-1">Az élet nem mindig könnyű. Néha még a legerősebbeknek is szükségük van segítségre a lét legnagyobb kihívásaival való megküzdésben. 
@@ -119,14 +124,16 @@
         </div>
         <h1 class="sub-text">
           Készen állsz rá, hogy jobban érezd megad a bőrödben, hogy egy boldogabb és teljesebb életet élj?</h1>
-        <div class="flex-items">
+        <div class="button-container">
+          <div class="flex-items">
 
-          <div class="btn-flex-container">
-            <a class="btn btn-outline-primary" href="#contact">BŐVEBBEN</a>
-          </div>
+            <div class="btn-flex-container">
+              <a class="btn btn-outline-primary" href="#contact">BŐVEBBEN</a>
+            </div>
 
-          <div class="btn-flex-container">
-            <a class="btn btn-filled-primary" href="#contact">BELEVÁGOK</a>
+            <div class="btn-flex-container">
+              <a class="btn btn-filled-primary" href="#contact">BELEVÁGOK</a>
+            </div>
           </div>
         </div>
         <div class="wave-bottom">
@@ -143,7 +150,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/index.js"></script>
-    <!-- <script src="./js/intro-transition.js"></script> -->
     <script>
       const navbar = document.getElementById("navbar");
       let scrolled = false;
@@ -218,6 +224,37 @@
           autoplay: true, // optional
           name: "Demo Animation", // optional
         });
+
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+        document.addEventListener("click", closeOnClickOutsideMenu);
+
+        function closeOnClickOutsideMenu(e) {
+          console.log('event: ', e);
+          console.log('class list: ', e.target.classList);
+          if (!e.target.classList.contains('nav-menu') && !e.target.classList.contains('hamburger') && !e.target.classList.contains('bar')) {
+            console.log('benne');
+              hamburger.classList.remove("active");
+              navMenu.classList.remove("active");
+            }
+        }
+
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
     </script>
   </body>
 </html>
