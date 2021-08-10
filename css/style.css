@@ -160,7 +160,7 @@ nav a:hover {
   display: block;
   position: absolute;
   transform: translateX(-50%);
-  margin-top: 6rem;
+  margin-top: 4rem;
   left: 50%;
   top: 0;
   font-family: "Raleway", Helvetica, sans-serif;
@@ -623,7 +623,7 @@ nav a:hover {
     left: 0px;
   }
   .welcome .content {
-    margin-top: 120px;
+    margin-top: 80px;
   }
   .glass-box {
     margin: 0;
