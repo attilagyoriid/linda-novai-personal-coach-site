@@ -219,6 +219,7 @@ nav a:hover {
   transform: rotateX(180deg);
   position: absolute;
   bottom: 0px;
+  left: 0;
 }
 
 #goal-animation-container {
