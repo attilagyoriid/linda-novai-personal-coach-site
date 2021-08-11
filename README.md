@@ -1,5 +1,5 @@
 <!-- @format -->
 
-# Linda Nivai's personal coach website
+# Linda Novai's personal coach website
 
 in progress
