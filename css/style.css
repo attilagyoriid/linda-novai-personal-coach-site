@@ -538,7 +538,8 @@ nav a:hover {
   .welcome .header {
     font-size: 1.5rem;
   }
-  .welcome .section-1 {
+  .welcome .section-1,
+  .welcome .section-2 {
     font-size: 0.8rem;
   }
 
@@ -573,6 +574,10 @@ nav a:hover {
     z-index: 2;
 
     position: relative;
+  }
+
+  .welcome .section-2 {
+    display: none;
   }
   #goal-animation-container {
     max-width: 300px;
