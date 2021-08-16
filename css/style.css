@@ -679,6 +679,7 @@ nav a:hover {
     width: 100%;
     height: 30px;
     transform: translateY(140px);
+    right:unset;
 
   
   }
@@ -715,6 +716,7 @@ nav a:hover {
     height: 70px;
 
   }
+
 
   .wave-top img,
   .wave-bottom img {
@@ -769,7 +771,7 @@ nav a:hover {
 
   .column-2 #dream-animation-container {
     align-self: center;
-    max-width: 70%;
+    max-width: 80%;
 
   }
 }
