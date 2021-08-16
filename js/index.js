@@ -25,4 +25,23 @@ gsap.to("#goal-animation-container", {
   duration: 2,
 });
 
+const block = document.querySelector(".column-1");
+
+const blockTimeline = gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: block,
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play none none none",
+    },
+  })
+  // Animate the header items
+  .from(block.querySelectorAll(".column-1 .card-question"), {
+    duration: 1,
+    y: 40,
+    opacity: 0,
+    stagger: 0.25,
+  });
+
 
